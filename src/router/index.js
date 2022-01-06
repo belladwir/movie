@@ -7,6 +7,12 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/movies/detail/:id",
+    name: "Detail",
+    component: () => import("../views/Detail.vue"),
+    props: true,
+  },
 ];
 
 const router = createRouter({
